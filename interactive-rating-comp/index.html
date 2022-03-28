@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="container">
+    <div class="card-base">
+      <div class="inner-container">
+      <div class="rate">
+        <img src="/interactive-rating-comp/images/icon-star.svg" alt="star" class="star-logo" />
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <ul>
+          <li><div class="1">1</div></li>
+          <li><div class="2">2</div></li>
+          <li><div class="3">3</div></li>
+          <li><div class="4">4</div></li>
+          <li><div class="5">5</div></li>
+        </ul>
+        <button>S U B M I T</button>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank" style="display: none;">
+        <img
+          src="/interactive-rating-comp/images/illustration-thank-you.svg"
+          alt=""
+          class="thanks-logo"
+        />
+        <div class="info">
+          You selected <span class="rating">4</span> out of 5
+        </div>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <!-- Thank you state end -->
+
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
